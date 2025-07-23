@@ -5,7 +5,7 @@
 **Prerequisites**:  
 - Familiarity with C (syntax, pointers, structs, file I/O, `argc/argv`).  
 - Python proficiency for ML prototyping.  
-- Arch Linux with VS Code, GCC (`gcc`, `g++`), GDB, and CUDA Toolkit installed.  
+- GCC (`gcc`, `g++`), GDB, and CUDA Toolkit installed.  
 - Optional: NVIDIA GPU or Google Colab Pro for CUDA practice.
 
 ---
