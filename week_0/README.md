@@ -20,4 +20,13 @@
     - you can get a contiguous memory block using `malloc` and then use `realoc` to increment the size of array.
     - the important part is to check if the array can or cannot insert an element or not. If the array capacity is 5 int elements for instance and it currently has the size 5, then we have to realoc more memory to insert a new element. 
     - we can create a `typedef struct` which can hold metadata about the dynamic array i.e., **Initial Capacity**, **Size** and pointer to the first address of the contiguous memory block.
-    
+
+#### DAY-3 : Student Record System
+**Prerequisites**
+    - file I/O
+    - struct 
+    - fopen 
+    - fwrite
+**Intuition**
+    - Create a struct to store the inputs, write them using `fwrite` as binary using `wb` mode.
+    - Do the same for reading using `fread` in `rb` mode.   
