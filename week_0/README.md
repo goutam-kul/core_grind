@@ -10,7 +10,7 @@
 - You will need a way to parse the user's input such that, when `add` is passed the add function is called. This can be done cleverly using `strcmp`. 
 - Now, we need to get the numbers they want to operate on, since input will be as a string, we need to typecast them as **double** or **float**. We can do this using `atof` function from the `stdlib` library.
 
-#### DAy-2 : Dynamic Array Implementation 
+#### DAY-2 : Dynamic Array Implementation 
 ###### Prerequisites
 - malloc
 - free
@@ -29,4 +29,16 @@
 - fwrite
 ###### Intuition
 - Create a struct to store the inputs, write them using `fwrite` as binary using `wb` mode.
-- Do the same for reading using `fread` in `rb` mode.   
+- Do the same for reading using `fread` in `rb` mode.  
+
+#### DAY-4 : Singly Linked List Implementation 
+##### Prerequisistes
+- linked list 
+- pointers 
+- struct 
+- dynamic array 
+
+##### Intuition 
+- ***linked list*** is a dynamic array where the first element also stores a pointer to the next element, creating a node like structure. 
+- We can `typedef` a `struct` creating a custom data type with value and a pointer
+- and each of these **struct element** will the element of a dynamic array.
