@@ -42,3 +42,20 @@
 - ***linked list*** is a dynamic array where the first element also stores a pointer to the next element, creating a node like structure. 
 - We can `typedef` a `struct` creating a custom data type with value and a pointer
 - and each of these **struct element** will the element of a dynamic array.
+
+
+#### DAY-5: Text File Analyzer
+##### Prerequisites 
+- File I/O
+- fread
+- fseek
+- ftell 
+- string handling 
+
+##### Intuition 
+- dedicated function of counting lines, words and characters(non-spaces)
+- we need to have a buffer that stores the texts/string from the txt file, then we can operate on the buffer using our functions.
+- use `fseek` to get the **size** of the file, starting from 0 to **SEEK_END**.
+- use `ftell` to store the size in a **long** variable. 
+- now use `fread` to store in our `buffer` (make sure to `rewind` the file before reading)
+

@@ -1,0 +1,2 @@
+This is an example text.
+To test if the program is working correctly or not.

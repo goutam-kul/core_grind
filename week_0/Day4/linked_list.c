@@ -17,6 +17,18 @@ Node *create_node(int value) {
     return node;
 }
 
+// Search a node
+Node *search_node(Node *head, int value) {
+    Node *current = head;
+    while (current != NULL) {
+        if (current->value == value) {
+            return current;
+        }
+        current = current->next;
+    }
+    return NULL;
+}
+
 // Function to print the linked list 
 void print_list(Node *head) {
     Node *current = head;
