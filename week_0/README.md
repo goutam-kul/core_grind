@@ -36,7 +36,8 @@
 - linked list 
 - pointers 
 - struct 
-- dynamic array 
+- dynamic array
+- memory mangament  
 
 ##### Intuition 
 - ***linked list*** is a dynamic array where the first element also stores a pointer to the next element, creating a node like structure. 
@@ -59,3 +60,7 @@
 - use `ftell` to store the size in a **long** variable. 
 - now use `fread` to store in our `buffer` (make sure to `rewind` the file before reading)
 
+#### DAY-6 Matrix Library 
+##### Prerequisites
+- pointers
+- memory management 
