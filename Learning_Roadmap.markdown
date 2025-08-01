@@ -36,15 +36,15 @@
         - _Skills_: Pointers, structs, dynamic memory.
         - _Example_: Add 5 nodes, remove one, print list.
 - **Day 5**
-    - [ ]  Build a Text File Analyzer: Count words, lines, characters in a text file.
+    - [x]  Build a Text File Analyzer: Count words, lines, characters in a text file.
         - _Skills_: File I/O, string handling.
         - _Example_: Analyze a 1KB text file, report stats.
 - **Day 6**
-    - [ ]  Build a Simple Matrix Library: Matrix addition, multiplication with 2D dynamic arrays.
+    - [x]  Build a Simple Matrix Library: Matrix addition, multiplication with 2D dynamic arrays.
         - _Skills_: Pointers, memory management, nested loops.
         - _Example_: Multiply two 3x3 matrices.
 - **Day 7**
-    - [ ]  Build a Task Scheduler: Queue-based task scheduler with priorities (`struct` queue).
+    - [x]  Build a Task Scheduler: Queue-based task scheduler with priorities (`struct` queue).
         - _Skills_: Structs, dynamic memory, algorithms.
         - _Example_: Schedule 5 tasks by priority.
 
