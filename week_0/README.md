@@ -67,3 +67,7 @@
 
 
 #### DAY-7 Queue-based task scheduler 
+##### Prerequisites 
+- pointers 
+- linked lists
+- memory management
