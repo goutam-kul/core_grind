@@ -71,7 +71,7 @@
 ### Daily Tasks
 
 - **Day 1–2: Basics**
-    - [ ]  Learn references, `const`, `auto`, `iostream` (`cin`, `cout`), function overloading, namespaces.
+    - [x]  Learn references, `const`, `auto`, `iostream` (`cin`, `cout`), function overloading, namespaces.
     - [ ]  Write 5–10 programs (e.g., string manipulator).
 - **Day 3–4: OOP**
     - [ ]  Learn classes, constructors/destructors, inheritance, polymorphism.
