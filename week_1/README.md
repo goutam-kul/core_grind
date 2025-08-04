@@ -38,4 +38,33 @@ When to use `auto`:
 2. **Iterator declaration**
 
 When to not use `auto`:
-1. **When type clarity is important** 
+1. **When type clarity is important**
+
+#### Day-2
+##### Functions & Function Overloading 
+- Function are **block of reusable code** that performs a **specific task**. They follow the **DRY** principle and makes the code much cleaner, modular and maintainable.
+```c++
+int add(int a, int b) {
+    return a + b;
+}
+```
+- **Function parameters** can **passed by value** or **pass by reference** in c++. Pass by value is when you get a copy of the variable. While in pass by reference you get direct access to the modify the variable. 
+- **Inline function** defined like this : 
+```c++
+inline int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+```
+- The benefit of these functions is that the compiles replaces the function call with the function's code at the call site during compilation. So the function call doesn't goes to the call stack.
+
+##### Function Overloading
+- Function overloading allows you to define multiple functions with the same name
+```c++
+int add(int a, int b) { return a + b; };
+int add(int a, int b, int c) { return a + b + c; };
+```
+- The compiler determines which function to call based on the arguments provided(type, number of arguments).
+i
+```Namespaces revisit on Day-3 and Day-4, since Day-3 is OOP and namespaces are heavly Object Oriented.```
+
+#### Day-3

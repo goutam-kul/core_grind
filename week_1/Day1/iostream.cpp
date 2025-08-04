@@ -1,5 +1,7 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
+#include <fstream>
 using namespace std;
 
 void booleanformatting(bool value) {
@@ -23,6 +25,57 @@ void numberbasis() {
     cout << "Hex: " << hex << num << endl;
     cout << "Octal: " << oct << num << endl; 
 }
+void input_line() {
+    string line;
+
+    // Clear input buffer before getline 
+    cin.ignore();
+    
+    cout << "Enter a line: ";
+    getline(cin, line);
+
+    cout << "You entered: " << line << endl;
+}
+
+// Stream states and Error Handling 
+void stream_states() {
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    // Check if input was successful 
+    if (cin.fail()) {
+        cout << "Invalid input!" << endl;
+        cin.clear();        // Clear error state 
+        cin.ignore(1000, '\n');  // Clear input buffer, ignores input values up to 1000 characters.
+    } else {
+        cout << "You entered: " << number << endl;
+    }
+}
+
+void fileIO() {
+    // Writing to file
+    ofstream outFile("output.txt");
+    if (outFile.is_open()) {
+        outFile << "Hello, world!" << endl;
+        outFile << "This is line 2" << endl;
+        outFile.close();
+    }
+
+    cout << "Writing completed to file 'output.txt'" << endl;
+
+    // Reading from file
+    ifstream inFile("output.txt");
+    string line;
+    if (inFile.is_open()) {
+        while (getline(inFile, line)) {
+            cout << line << endl;
+        }
+        inFile.close();
+    }
+    
+}
 
 int main() {
     // '>>' extraction operator (input)
@@ -44,5 +97,9 @@ int main() {
     cout << "=== Different Number basis ===" << endl;
     numberbasis();
 
+    input_line();
+    stream_states();
+    fileIO();
+    
     return 0;
 }
