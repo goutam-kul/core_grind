@@ -1,5 +1,5 @@
 #### Day-1
-###### `iostream`
+###### iostream
 `iostream` is the standard C++ library for input and output operations. It provides stream based I/O through objects like `cin`, `cout`, `cerr` and `clog`.
 
 
@@ -18,10 +18,10 @@ int& refX = x;  // ref is now an alias (reference) to x
 3. **No Null reference** (unlike pointers)
 4. **Same memory address** as the original objecti
 
-###### `const` keyword 
+###### const keyword 
 The `const` keyword makes variable immutable. 
 
-###### 'auto` keyword
+###### auto keyword
 `auto` tells the compiler to **automatically deduce** the type of varialbe from its initializer. It makes code more readable and maintainable.
 ```c++
 auto x = 42;        // int
