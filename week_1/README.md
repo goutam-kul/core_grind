@@ -41,7 +41,7 @@ When to not use `auto`:
 1. **When type clarity is important**
 
 #### Day-2
-##### Functions & Function Overloading 
+###### Functions & Function Overloading 
 - Function are **block of reusable code** that performs a **specific task**. They follow the **DRY** principle and makes the code much cleaner, modular and maintainable.
 ```c++
 int add(int a, int b) {
@@ -57,7 +57,7 @@ inline int max(int a, int b) {
 ```
 - The benefit of these functions is that the compiles replaces the function call with the function's code at the call site during compilation. So the function call doesn't goes to the call stack.
 
-##### Function Overloading
+###### Function Overloading
 - Function overloading allows you to define multiple functions with the same name
 ```c++
 int add(int a, int b) { return a + b; };
